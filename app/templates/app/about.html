@@ -1,0 +1,49 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block title %} About {% endblock title %}
+
+{% block banner-slider %}
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="{% static 'app/images/banner/1.jpg' %}" class="d-block w-100" height="600" alt="banner image">
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'app/images/banner/2.jpg' %}" class="d-block w-100" height="600" alt="banner image">
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'app/images/banner/3.jpg' %}" class="d-block w-100" height="600" alt="banner image">
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'app/images/banner/4.jpg' %}" class="d-block w-100" height="600" alt="banner image">
+            </div>
+        </div>
+    </div>
+{% endblock banner-slider %}
+
+{% block main-content %}
+    <div class="container mt-3">
+        <br/>
+        <h2 class="text-center"> About Us </h2>
+        <br/>
+        <div class="row container">
+            <p class="fs-4 text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, blanditiis corporis eum ex impedit ipsa
+                itaque nisi obcaecati odit quam quia saepe similique voluptas! Aliquid, animi culpa dolor esse expedita
+                hic in itaque laudantium nesciunt officiis quaerat, ratione rem temporibus tenetur vel voluptas
+                voluptatibus? Fugiat inventore molestias perspiciatis qui ratione!</p>
+        </div>
+
+        <br/><br/>
+
+        <h2 class="text-center"> Mission </h2>
+        <br/>
+        <div class="row container">
+            <p class="fs-4 text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias aliquam culpa ducimus, in
+                molestias obcaecati odit, quam repellendus, repudiandae similique temporibus! Adipisci aliquam, aliquid
+                amet atque culpa dolorem, fuga hic ipsum iste itaque neque nihil nisi quibusdam rem suscipit tempore
+                ullam, vero voluptas voluptatem voluptatibus! Dolore molestiae nemo nesciunt nisi numquam quasi
+                recusandae, sed.</p>
+        </div>
+    </div>
+    <br/><br/>
+{% endblock main-content %}
